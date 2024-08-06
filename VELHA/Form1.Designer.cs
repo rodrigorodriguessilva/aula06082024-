@@ -161,7 +161,7 @@
             // button3
             // 
             button3.Font = new Font("Snap ITC", 27.75F, FontStyle.Bold | FontStyle.Strikeout, GraphicsUnit.Point, 0);
-            button3.Location = new Point(21, 28);
+            button3.Location = new Point(63, 61);
             button3.Name = "button3";
             button3.Size = new Size(385, 389);
             button3.TabIndex = 11;

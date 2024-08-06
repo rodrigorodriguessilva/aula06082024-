@@ -223,7 +223,7 @@ namespace VELHA
 
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
-            
+            Application.Exit();
         }
     }
 }

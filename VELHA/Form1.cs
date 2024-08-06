@@ -25,6 +25,7 @@ namespace VELHA
                 btn_2.BackColor = Color.Green;
                 btn_3.BackColor = Color.Green;
                 MessageBox.Show("Jogador " + usuario + " venceu");
+                novojogo();
             }
 
             if (btn_4.Text == btn_5.Text && btn_5.Text == btn_6.Text && btn_4.Text != "")
@@ -33,6 +34,7 @@ namespace VELHA
                 btn_5.BackColor = Color.Green;
                 btn_6.BackColor = Color.Green;
                 MessageBox.Show("Jogador " + usuario + " venceu");
+                novojogo();
             }
 
             if (btn_7.Text == btn_8.Text && btn_8.Text == btn_9.Text && btn_9.Text != "")
@@ -41,6 +43,7 @@ namespace VELHA
                 btn_8.BackColor = Color.Green;
                 btn_9.BackColor = Color.Green;
                 MessageBox.Show("Jogador " + usuario + " venceu");
+                novojogo();
             }
 
             if (btn_1.Text == btn_4.Text && btn_4.Text == btn_7.Text && btn_7.Text != "")
@@ -49,6 +52,7 @@ namespace VELHA
                 btn_4.BackColor = Color.Green;
                 btn_7.BackColor = Color.Green;
                 MessageBox.Show("Jogador " + usuario + " venceu");
+                novojogo();
             }
 
             if (btn_2.Text == btn_5.Text && btn_5.Text == btn_8.Text && btn_8.Text != "")
@@ -57,6 +61,7 @@ namespace VELHA
                 btn_5.BackColor = Color.Green;
                 btn_8.BackColor = Color.Green;
                 MessageBox.Show("Jogador " + usuario + " venceu");
+                novojogo();
             }
 
             if (btn_3.Text == btn_6.Text && btn_6.Text == btn_9.Text && btn_9.Text != "")
@@ -65,6 +70,7 @@ namespace VELHA
                 btn_6.BackColor = Color.Green;
                 btn_9.BackColor = Color.Green;
                 MessageBox.Show("Jogador " + usuario + " venceu");
+                novojogo();
             }
 
 
@@ -74,6 +80,7 @@ namespace VELHA
                 btn_5.BackColor = Color.Green;
                 btn_9.BackColor = Color.Green;
                 MessageBox.Show("Jogador " + usuario + " venceu");
+                novojogo();
             }
 
 
@@ -83,6 +90,7 @@ namespace VELHA
                 btn_5.BackColor = Color.Green;
                 btn_7.BackColor = Color.Green;
                 MessageBox.Show("Jogador " + usuario + " venceu");
+                novojogo();
             }
 
             if (btn_1.Text != "" &&
@@ -107,6 +115,7 @@ namespace VELHA
                 btn_8.BackColor = Color.Red;
                 btn_9.BackColor = Color.Red;
                 MessageBox.Show(" IIIIIHHHH DEU VELHA");
+                novojogo();
             }
 
 
@@ -224,6 +233,50 @@ namespace VELHA
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            novojogo();
+        }
+
+        public void novojogo()
+        {
+            btn_1.Text = "";
+            btn_2.Text = "";
+            btn_3.Text = "";
+            btn_4.Text = "";
+            btn_5.Text = "";
+            btn_6.Text = "";
+            btn_7.Text = "";
+            btn_8.Text = "";
+            btn_9.Text = "";
+
+            btn_1.Enabled = true;
+            btn_2.Enabled = true;
+            btn_3.Enabled = true;
+            btn_4.Enabled = true;
+            btn_5.Enabled = true;
+            btn_6.Enabled = true;
+            btn_7.Enabled = true;
+            btn_8.Enabled = true;
+            btn_9.Enabled = true;
+
+            btn_1.BackColor = SystemColors.ControlLight;
+            btn_2.BackColor = SystemColors.ControlLight;
+            btn_3.BackColor = SystemColors.ControlLight;
+            btn_4.BackColor = SystemColors.ControlLight;
+            btn_5.BackColor = SystemColors.ControlLight;
+            btn_6.BackColor = SystemColors.ControlLight;
+            btn_7.BackColor = SystemColors.ControlLight;
+            btn_8.BackColor = SystemColors.ControlLight;
+            btn_9.BackColor = SystemColors.ControlLight;
+
+            button1.Enabled = true;
+            button2.Enabled = true;
+            button3.Visible = true;
+            contador = 0;
+ 
         }
     }
 }
